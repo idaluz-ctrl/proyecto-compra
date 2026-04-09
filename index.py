@@ -20,7 +20,7 @@ def ver_productos():
     if len(productos) == 0:
         print(" No hay productos en la lista.")
     else:
-        print("\n📋 Lista de productos:")
+        print("\n Lista de productos:")
         for p in productos:
             print(f"  - {p['nombre']}: ${p['precio']:.2f}")
 
@@ -42,7 +42,7 @@ def filtrar_por_precio():
     if len(encontrados) == 0:
         print(" Ningún producto supera ese precio.")
     else:
-        print(f"\n🔍 Productos mayores a ${limite:.2f}:")
+        print(f"\n Productos mayores a ${limite:.2f}:")
         for p in encontrados:
             print(f"  - {p['nombre']}: ${p['precio']:.2f}")
 
